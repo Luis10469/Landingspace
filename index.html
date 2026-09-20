@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpaceFiber — Internet de fibra óptica para tu hogar y tu negocio</title>
+<meta name="description" content="Fibra óptica simétrica desde 100 hasta 600 Mbps, instalación en 48 horas, sin cláusula de permanencia y soporte 24/7. Verifica la cobertura en tu dirección.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#128225;</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+</head>
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+<!-- ============================================================
+     1. ENCABEZADO
+     ============================================================ -->
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="logo" href="#inicio" aria-label="SpaceFiber, ir al inicio">
+      <span class="logo__mark" aria-hidden="true">&#128225;</span>
+      <span class="logo__name">SpaceFiber</span>
+    </a>
+
+    <nav class="nav" id="main-nav" aria-label="Navegación principal">
+      <a class="nav__link" href="#planes">Planes</a>
+      <a class="nav__link" href="#como-funciona">Cómo funciona</a>
+      <a class="nav__link" href="#cobertura">Cobertura</a>
+      <a class="nav__link" href="#beneficios">Por qué nosotros</a>
+      <a class="nav__link" href="#opiniones">Opiniones</a>
+      <a class="nav__link" href="#faq">Ayuda</a>
+    </nav>
+
+    <div class="header__actions">
+      <a class="btn btn--primary header__cta" href="#contratar">Contratar</a>
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Cambiar tema">&#9728;</button>
+      <button class="icon-btn" id="menu-toggle" type="button" aria-label="Abrir menú" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<main id="contenido">
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="inicio">
+    <div class="wrap hero__in">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <span class="badge">Fibra 100% óptica hasta tu casa</span>
+          <h1 class="hero__title">Internet que no se cae <span class="grad-text">cuando más lo necesitas</span></h1>
+          <p class="lead hero__lead">
+            Velocidad simétrica, router Wi-Fi 6 incluido e instalación en 48 horas.
+            Sin cláusula de permanencia y con soporte real las 24 horas.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#planes">Ver planes y precios</a>
+            <a class="btn btn--ghost" href="#contratar">Verificar mi cobertura</a>
+          </div>
+          <p class="hero__note">Más de 1.200 hogares conectados &middot; Calificación 4,8 / 5</p>
+        </div>
+
+        <!-- Ilustración: señal de fibra + comparativa de velocidad -->
+        <div class="hero__art" aria-hidden="true">
+          <svg class="art" viewBox="0 0 420 300" role="presentation" focusable="false">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="var(--brand)"/>
+                <stop offset="100%" stop-color="var(--brand-2)"/>
+              </linearGradient>
+            </defs>
+
+            <!-- ondas -->
+            <circle class="art-pulse" cx="210" cy="150" r="60" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity=".5"/>
+            <circle class="art-pulse" cx="210" cy="150" r="95" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity=".35"/>
+            <circle class="art-pulse" cx="210" cy="150" r="130" fill="none" stroke="url(#g1)" stroke-width="1.5" opacity=".2"/>
+
+            <!-- enlaces -->
+            <g stroke="var(--line)" stroke-width="1.5">
+              <line x1="210" y1="150" x2="80"  y2="70"/>
+              <line x1="210" y1="150" x2="350" y2="72"/>
+              <line x1="210" y1="150" x2="70"  y2="230"/>
+              <line x1="210" y1="150" x2="355" y2="228"/>
+            </g>
+
+            <!-- nodos -->
+            <g fill="var(--surface)" stroke="var(--line)" stroke-width="1.5">
+              <rect x="52"  y="50"  width="56" height="40" rx="9"/>
+              <rect x="322" y="52"  width="56" height="40" rx="9"/>
+              <rect x="44"  y="210" width="52" height="40" rx="9"/>
+              <rect x="330" y="208" width="52" height="40" rx="9"/>
+            </g>
+            <g fill="var(--muted-2)" font-size="10" font-family="Inter, sans-serif" text-anchor="middle">
+              <text x="80"  y="74">TV 4K</text>
+              <text x="350" y="76">Consola</text>
+              <text x="70"  y="234">Laptop</text>
+              <text x="356" y="232">Celular</text>
+            </g>
+
+            <!-- router -->
+            <rect x="170" y="130" width="80" height="44" rx="12" fill="url(#g1)"/>
+            <circle cx="190" cy="152" r="4" fill="#fff" opacity=".9"/>
+            <circle cx="205" cy="152" r="4" fill="#fff" opacity=".55"/>
+            <circle cx="220" cy="152" r="4" fill="#fff" opacity=".3"/>
+          </svg>
+
+          <div class="panel panel--glass mt-4">
+            <div class="meter">
+              <div class="meter__row">
+                <span class="meter__label">Fibra SpaceFiber</span>
+                <span class="meter__track"><span class="meter__fill" style="width:100%"></span></span>
+                <span class="meter__value">600 Mbps</span>
+              </div>
+              <div class="meter__row">
+                <span class="meter__label">Cable coaxial</span>
+                <span class="meter__track"><span class="meter__fill meter__fill--soft" style="width:34%"></span></span>
+                <span class="meter__value">200 Mbps</span>
+              </div>
+              <div class="meter__row">
+                <span class="meter__label">ADSL</span>
+                <span class="meter__track"><span class="meter__fill meter__fill--soft" style="width:8%"></span></span>
+                <span class="meter__value">20 Mbps</span>
+              </div>
+            </div>
+            <p class="small mt-4">Velocidad de bajada máxima por tecnología en nuestra red.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat reveal"><span class="stat__num">600</span><span class="stat__label">Mbps simétricos máximos</span></div>
+        <div class="stat reveal"><span class="stat__num">48 h</span><span class="stat__label">para instalar en zona cubierta</span></div>
+        <div class="stat reveal"><span class="stat__num">24/7</span><span class="stat__label">soporte por chat y teléfono</span></div>
+        <div class="stat reveal"><span class="stat__num">0</span><span class="stat__label">meses de permanencia</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       BARRA DE GARANTÍAS
+       ============================================================ -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="assurance reveal">
+        <div class="assurance__item">
+          <span class="assurance__icon" aria-hidden="true">&#128225;</span>
+          <span>
+            <span class="assurance__title">Fibra hasta el hogar</span><br>
+            <span class="assurance__text">Sin cables de cobre en el tramo final</span>
+          </span>
+        </div>
+        <div class="assurance__item">
+          <span class="assurance__icon" aria-hidden="true">&#128246;</span>
+          <span>
+            <span class="assurance__title">Router Wi-Fi 6 incluido</span><br>
+            <span class="assurance__text">Sin costo de alquiler mensual</span>
+          </span>
+        </div>
+        <div class="assurance__item">
+          <span class="assurance__icon" aria-hidden="true">&#128339;</span>
+          <span>
+            <span class="assurance__title">Instalación en 48 horas</span><br>
+            <span class="assurance__text">Agendas la visita cuando te sirva</span>
+          </span>
+        </div>
+        <div class="assurance__item">
+          <span class="assurance__icon" aria-hidden="true">&#128274;</span>
+          <span>
+            <span class="assurance__title">Sin permanencia</span><br>
+            <span class="assurance__text">Te quedas porque quieres, no por contrato</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       2. PROPUESTA DE VALOR
+       ============================================================ -->
+  <section class="section" id="propuesta">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker">Qué es SpaceFiber</span>
+        <h2 class="section__title">Un operador de Internet que puedes gestionar tú mismo</h2>
+        <p class="sub">
+          Somos un proveedor regional de fibra óptica. Además de la conexión, te damos un portal
+          donde ves tu plan, tus facturas y tus solicitudes de soporte sin depender de una llamada.
+        </p>
+      </div>
+
+      <div class="grid grid--2 grid--stretch">
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#9889;</div>
+          <h3 class="card__title">Qué hacemos</h3>
+          <p class="card__text">
+            Llevamos fibra óptica hasta tu casa o tu local, con velocidad simétrica y un router
+            incluido. Todo el servicio se contrata, se paga y se atiende desde el portal.
+          </p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#129522;</div>
+          <h3 class="card__title">Qué problema resolvemos</h3>
+          <p class="card__text">
+            El de siempre: conexiones que se caen a la hora pico y un soporte que nunca responde.
+            Aquí cada reporte queda con número, responsable y estado que puedes seguir.
+          </p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128101;</div>
+          <h3 class="card__title">Para quién es</h3>
+          <p class="card__text">
+            Para hogares con varios dispositivos conectados, personas que trabajan desde casa y
+            pequeños negocios que necesitan una conexión estable durante toda la jornada.
+          </p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#127919;</div>
+          <h3 class="card__title">Por qué elegirnos</h3>
+          <p class="card__text">
+            Precio claro sin letra pequeña, instalación rápida, sin permanencia y soporte que
+            contesta a cualquier hora. Si no cumplimos, te puedes ir sin pagar penalidad.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PLANES
+       ============================================================ -->
+  <section class="section" id="planes">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
+        <span class="kicker">Planes</span>
+        <h2 class="section__title">Elige la velocidad que necesitas</h2>
+        <p class="sub">Precios mensuales con IVA incluido. Instalación sin costo en zona cubierta.</p>
+      </div>
+
+      <div class="grid grid--3 plans">
+        <article class="plan reveal">
+          <span class="plan__name">Hogar Esencial</span>
+          <p class="plan__speed">100 <span>Mbps</span></p>
+          <p class="plan__price"><b>$69.900</b> / mes</p>
+          <div class="plan__divider"></div>
+          <ul class="plan__features">
+            <li>Velocidad simétrica de subida y bajada</li>
+            <li>Router Wi-Fi 6 incluido</li>
+            <li>Ideal para 1 a 5 dispositivos</li>
+            <li>Soporte 24/7 por chat y teléfono</li>
+            <li>Sin cláusula de permanencia</li>
+          </ul>
+          <a class="btn btn--ghost plan__cta" href="#contratar">Contratar Esencial</a>
+        </article>
+
+        <article class="plan plan--featured reveal">
+          <span class="plan__flag">El más contratado</span>
+          <span class="plan__name">Hogar Pro</span>
+          <p class="plan__speed">300 <span>Mbps</span></p>
+          <p class="plan__price"><b>$89.900</b> / mes</p>
+          <div class="plan__divider"></div>
+          <ul class="plan__features">
+            <li>Todo lo del plan Esencial</li>
+            <li>Ideal para teletrabajo y streaming 4K</li>
+            <li>Hasta 15 dispositivos conectados</li>
+            <li>Atención prioritaria en soporte</li>
+            <li>Instalación en 48 horas</li>
+          </ul>
+          <a class="btn btn--primary plan__cta" href="#contratar">Contratar Pro</a>
+        </article>
+
+        <article class="plan reveal">
+          <span class="plan__name">Hogar Max</span>
+          <p class="plan__speed">600 <span>Mbps</span></p>
+          <p class="plan__price"><b>$119.900</b> / mes</p>
+          <div class="plan__divider"></div>
+          <ul class="plan__features">
+            <li>Todo lo del plan Pro</li>
+            <li>Más de 20 dispositivos sin perder velocidad</li>
+            <li>IP fija opcional para tu negocio</li>
+            <li>Visita técnica prioritaria</li>
+            <li>Segundo punto de acceso con descuento</li>
+          </ul>
+          <a class="btn btn--ghost plan__cta" href="#contratar">Contratar Max</a>
+        </article>
+      </div>
+
+      <p class="sub center mt-5">
+        ¿Tienes un negocio con necesidades distintas?
+        <a href="#contratar" style="color:var(--brand); font-weight:600">Habla con un asesor</a>
+        y armamos un plan a tu medida.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CÓMO FUNCIONA
+       ============================================================ -->
+  <section class="section" id="como-funciona">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <span class="kicker">Cómo funciona</span>
+        <h2 class="section__title">De la solicitud al Wi-Fi andando, en tres pasos</h2>
+        <p class="sub">Sin filas, sin papeleo y sin visitas innecesarias.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step__num" aria-hidden="true">1</span>
+          <div>
+            <p class="step__title">Verificas tu dirección</p>
+            <p class="step__text">
+              Escribes dónde quieres el servicio y te decimos al instante si hay cobertura y qué
+              planes están disponibles allí.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <span class="step__num" aria-hidden="true">2</span>
+          <div>
+            <p class="step__title">Eliges plan y agendas</p>
+            <p class="step__text">
+              Contratas en línea, escoges el día de la visita y recibes por correo la confirmación
+              con la hora y el técnico asignado.
+            </p>
+          </div>
+        </div>
+
+        <div class="step reveal">
+          <span class="step__num" aria-hidden="true">3</span>
+          <div>
+            <p class="step__title">Te conectamos</p>
+            <p class="step__text">
+              Instalamos la fibra, dejamos tu red configurada y te entregamos el acceso al portal
+              para que gestiones todo desde ahí.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COBERTURA
+       ============================================================ -->
+  <section class="section" id="cobertura">
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <span class="kicker">Cobertura</span>
+          <h2 class="section__title">Revisa si ya llegamos a tu barrio</h2>
+          <p class="sub">
+            Nuestra red crece cada mes. Si tu zona todavía no aparece, déjanos tus datos y te
+            avisamos apenas encendamos el nodo más cercano.
+          </p>
+          <ul class="card__list mt-5">
+            <li>Zonas activas: Centro, Norte, Occidente, Laureles, Envigado y Sabaneta.</li>
+            <li>En despliegue: Bello, Itagüí y Rionegro.</li>
+            <li>Instalación sin costo dentro de zona cubierta.</li>
+          </ul>
+          <p class="mt-5"><a class="btn btn--primary" href="#contratar">Verificar mi dirección</a></p>
+        </div>
+
+        <div class="panel reveal">
+          <svg class="art" viewBox="0 0 400 260" role="img" aria-label="Mapa ilustrativo de las zonas de cobertura">
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="var(--brand)" stop-opacity=".30"/>
+                <stop offset="100%" stop-color="var(--brand-2)" stop-opacity=".12"/>
+              </linearGradient>
+            </defs>
+
+            <g stroke="var(--line-soft)" stroke-width="1">
+              <path d="M0 65 H400 M0 130 H400 M0 195 H400"/>
+              <path d="M80 0 V260 M160 0 V260 M240 0 V260 M320 0 V260"/>
+            </g>
+
+            <path d="M60 60 L170 38 L250 78 L232 160 L120 178 L52 128 Z"
+                  fill="url(#g2)" stroke="var(--brand)" stroke-width="1.6"/>
+            <path d="M250 110 L330 96 L362 150 L300 196 L236 168 Z"
+                  fill="url(#g2)" stroke="var(--brand)" stroke-width="1.6" stroke-dasharray="5 4"/>
+
+            <g fill="var(--brand)">
+              <circle cx="128" cy="96" r="5"/><circle cx="196" cy="86" r="5"/>
+              <circle cx="150" cy="142" r="5"/><circle cx="214" cy="132" r="5"/>
+            </g>
+            <g fill="var(--muted-2)" font-size="11" font-family="Inter, sans-serif">
+              <text x="86" y="214">Zona activa</text>
+              <text x="266" y="224">En despliegue</text>
+            </g>
+          </svg>
+          <p class="small mt-4">Mapa ilustrativo de la red. La cobertura exacta se confirma con tu dirección.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       3. BENEFICIOS
+       ============================================================ -->
+  <section class="section" id="beneficios">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
+        <span class="kicker">Beneficios</span>
+        <h2 class="section__title">Lo que cambia cuando te pasas a SpaceFiber</h2>
+        <p class="sub">Seis motivos por los que nuestros clientes no vuelven a su operador anterior.</p>
+      </div>
+
+      <div class="grid grid--3 grid--stretch">
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128640;</div>
+          <h3 class="card__title">Velocidad simétrica</h3>
+          <p class="card__text">Subes tan rápido como bajas: videollamadas nítidas y copias de seguridad que terminan.</p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128246;</div>
+          <h3 class="card__title">Wi-Fi que cubre la casa</h3>
+          <p class="card__text">Router Wi-Fi 6 incluido y configuración hecha por el técnico el día de la instalación.</p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128276;</div>
+          <h3 class="card__title">Soporte con seguimiento</h3>
+          <p class="card__text">Cada reporte abre un ticket con número y estado; sabes en qué va sin volver a llamar.</p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128202;</div>
+          <h3 class="card__title">Tu cuenta a la vista</h3>
+          <p class="card__text">Plan activo, facturas, pagos e historial de visitas técnicas en un solo panel.</p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128181;</div>
+          <h3 class="card__title">Precio sin sorpresas</h3>
+          <p class="card__text">La tarifa que ves es la que pagas. Sin cargos ocultos ni aumentos al tercer mes.</p>
+        </article>
+
+        <article class="card card--hover reveal">
+          <div class="card__icon" aria-hidden="true">&#128241;</div>
+          <h3 class="card__title">Todo desde el celular</h3>
+          <p class="card__text">Contratas, pagas y pides soporte desde el navegador, sin instalar aplicaciones.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       4. PRUEBA SOCIAL
+       ============================================================ -->
+  <section class="section" id="opiniones">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
+        <span class="kicker">Opiniones</span>
+        <h2 class="section__title">Lo que dicen nuestros clientes</h2>
+        <p class="sub">Calificación promedio de 4,8 sobre 5 en las encuestas posteriores a la instalación.</p>
+      </div>
+
+      <div class="grid grid--4 mt-5">
+        <div class="stat reveal"><span class="stat__num">4,8/5</span><span class="stat__label">calificación promedio</span></div>
+        <div class="stat reveal"><span class="stat__num">1.240</span><span class="stat__label">hogares conectados</span></div>
+        <div class="stat reveal"><span class="stat__num">92%</span><span class="stat__label">tickets resueltos el mismo día</span></div>
+        <div class="stat reveal"><span class="stat__num">3 h</span><span class="stat__label">tiempo medio de respuesta</span></div>
+      </div>
+
+      <div class="grid grid--3 grid--stretch mt-4">
+        <figure class="quote reveal" style="margin:0">
+          <div class="quote__stars" aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="quote__text" style="margin:0">
+            &ldquo;Verifiqué la cobertura un domingo y el martes ya tenía la fibra instalada.
+            No tuve que llamar a nadie en todo el proceso.&rdquo;
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="quote__avatar" aria-hidden="true">LM</span>
+            <span>
+              <span class="quote__name">Laura M.</span><br>
+              <span class="quote__role">Plan Hogar Pro &middot; Laureles</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote reveal" style="margin:0">
+          <div class="quote__stars" aria-label="5 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote class="quote__text" style="margin:0">
+            &ldquo;Se cayó el servicio de madrugada y pude ver el ticket avanzar desde el celular
+            hasta que quedó resuelto. Eso no lo tenía con mi operador anterior.&rdquo;
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="quote__avatar" aria-hidden="true">AP</span>
+            <span>
+              <span class="quote__name">Andrés P.</span><br>
+              <span class="quote__role">Plan Hogar Max &middot; Envigado</span>
+            </span>
+          </figcaption>
+        </figure>
+
+        <figure class="quote reveal" style="margin:0">
+          <div class="quote__stars" aria-label="4 de 5 estrellas">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+          <blockquote class="quote__text" style="margin:0">
+            &ldquo;Tengo la papelería y trabajamos con facturación en línea todo el día.
+            Desde que cambiamos no hemos tenido una sola caída en horario laboral.&rdquo;
+          </blockquote>
+          <figcaption class="quote__who">
+            <span class="quote__avatar" aria-hidden="true">MR</span>
+            <span>
+              <span class="quote__name">Marcela R.</span><br>
+              <span class="quote__role">Negocio &middot; Centro</span>
+            </span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <p class="small center mt-5">
+        Sitio de demostración: los testimonios y las cifras son contenido de ejemplo.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       5. LLAMADO A LA ACCIÓN
+       ============================================================ -->
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <h2>Cámbiate esta semana y conéctate en 48 horas</h2>
+        <p>
+          Revisamos la cobertura en tu dirección sin costo y te decimos exactamente qué plan
+          puedes tener y cuándo podemos instalarlo.
+        </p>
+        <div class="cta-band__actions">
+          <a class="btn btn--light" href="#contratar">Comenzar ahora</a>
+          <a class="btn btn--ghost" href="#faq" style="background:transparent; border-color:rgba(255,255,255,.55); color:#fff">Tengo una duda</a>
+        </div>
+        <p class="cta-band__note">Respuesta en menos de 24 horas hábiles &middot; Sin costo de estudio</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       6. FORMULARIO DE CONVERSIÓN
+       ============================================================ -->
+  <section class="section" id="contratar">
+    <div class="wrap">
+      <div class="split">
+        <div class="reveal">
+          <span class="kicker">Solicita tu instalación</span>
+          <h2 class="section__title">Déjanos tus datos y te llamamos</h2>
+          <p class="sub">
+            Un asesor confirma la cobertura en tu dirección, te explica los planes disponibles
+            y agenda la visita técnica en el horario que prefieras.
+          </p>
+          <ul class="card__list mt-5">
+            <li>Te contactamos en menos de 24 horas hábiles.</li>
+            <li>El estudio de cobertura no tiene costo.</li>
+            <li>Usamos tus datos solo para esta solicitud.</li>
+          </ul>
+
+          <div class="panel mt-5">
+            <p class="assurance__title">¿Prefieres hablar directo?</p>
+            <p class="sub mt-4">
+              Línea de ventas <a href="tel:+576040000000" style="color:var(--brand); font-weight:600">+57 604 000 0000</a><br>
+              Lunes a sábado, 7:00 a 20:00
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <form class="form" id="lead-form" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__control" id="nombre" name="nombre" type="text" placeholder="Ana Ramírez" autocomplete="name" required>
+                <span class="field__error" id="error-nombre" role="alert"></span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="correo">Correo electrónico <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__control" id="correo" name="correo" type="email" placeholder="ana@correo.com" autocomplete="email" required>
+                <span class="field__error" id="error-correo" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="telefono">Teléfono <span class="req" aria-hidden="true">*</span></label>
+                <input class="field__control" id="telefono" name="telefono" type="tel" placeholder="300 123 4567" autocomplete="tel" required>
+                <span class="field__error" id="error-telefono" role="alert"></span>
+              </div>
+              <div class="field">
+                <label class="field__label" for="plan">Plan de interés <span class="req" aria-hidden="true">*</span></label>
+                <select class="field__control" id="plan" name="plan" required>
+                  <option value="">Selecciona un plan</option>
+                  <option value="esencial">Hogar Esencial &mdash; 100 Mbps</option>
+                  <option value="pro">Hogar Pro &mdash; 300 Mbps</option>
+                  <option value="max">Hogar Max &mdash; 600 Mbps</option>
+                  <option value="negocio">Plan para negocio</option>
+                  <option value="asesoria">Aún no lo sé, necesito asesoría</option>
+                </select>
+                <span class="field__error" id="error-plan" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="direccion">Dirección de instalación <span class="req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="direccion" name="direccion" type="text" placeholder="Calle 12 #34-56, barrio, ciudad" autocomplete="street-address" required>
+              <span class="field__error" id="error-direccion" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label class="field__label" for="mensaje">Mensaje (opcional)</label>
+              <textarea class="field__control" id="mensaje" name="mensaje" placeholder="Cuéntanos cuántos equipos conectas o a qué hora prefieres la visita."></textarea>
+            </div>
+
+            <div class="field check-group">
+              <label class="check" for="politica">
+                <input id="politica" name="politica" type="checkbox" required>
+                <span>Autorizo el tratamiento de mis datos según la <a href="politica-de-privacidad.html">política de privacidad</a>.</span>
+              </label>
+              <span class="field__error" id="error-politica" role="alert"></span>
+            </div>
+
+            <button class="btn btn--primary btn--block" id="lead-submit" type="submit">Solicitar mi instalación</button>
+
+            <p class="form__msg form__msg--ok" id="form-ok" role="status" tabindex="-1"></p>
+            <p class="form__msg form__msg--error" id="form-error" role="alert"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       7. PREGUNTAS FRECUENTES
+       ============================================================ -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="section__head section__head--center reveal">
+        <span class="kicker">Ayuda</span>
+        <h2 class="section__title">Preguntas frecuentes</h2>
+        <p class="sub">Lo que más nos preguntan antes de contratar.</p>
+      </div>
+
+      <div class="accordion reveal" id="faq-accordion">
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__btn" type="button" id="faq-btn-1" aria-expanded="false" aria-controls="faq-panel-1">
+              ¿Cómo sé si hay cobertura en mi dirección?
+              <span class="accordion__sign" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1" data-open="false">
+            <div class="accordion__inner">
+              <p>Déjanos tu dirección en el formulario. La ubicamos en el mapa de la red y confirmamos si está dentro de una zona activa. Si aún no llegamos, te avisamos cuando encendamos el nodo más cercano.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__btn" type="button" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+              ¿Cuánto tarda la instalación?
+              <span class="accordion__sign" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2" data-open="false">
+            <div class="accordion__inner">
+              <p>Hasta 48 horas hábiles después de confirmar la contratación, siempre que estés en zona cubierta. Eliges el día y la franja horaria de la visita.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__btn" type="button" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+              ¿El router tiene costo aparte?
+              <span class="accordion__sign" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3" data-open="false">
+            <div class="accordion__inner">
+              <p>No. El router Wi-Fi 6 va incluido en todos los planes y no se cobra alquiler mensual. Si cancelas el servicio, solo debes devolverlo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__btn" type="button" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+              ¿Puedo cambiar de plan más adelante?
+              <span class="accordion__sign" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4" data-open="false">
+            <div class="accordion__inner">
+              <p>Sí, desde tu panel. El cambio aplica en el siguiente ciclo de facturación y no tiene costo. Tampoco hay permanencia, así que puedes subir o bajar de plan cuando quieras.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__btn" type="button" id="faq-btn-5" aria-expanded="false" aria-controls="faq-panel-5">
+              ¿Qué hago si se cae el servicio?
+              <span class="accordion__sign" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5" data-open="false">
+            <div class="accordion__inner">
+              <p>Abres un ticket desde el portal, incluso desde el celular. Queda con número, agente asignado y estado que se actualiza hasta quedar resuelto. También atendemos por teléfono las 24 horas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion__item">
+          <h3>
+            <button class="accordion__btn" type="button" id="faq-btn-6" aria-expanded="false" aria-controls="faq-panel-6">
+              ¿Qué hacen con mis datos personales?
+              <span class="accordion__sign" aria-hidden="true">+</span>
+            </button>
+          </h3>
+          <div class="accordion__panel" id="faq-panel-6" role="region" aria-labelledby="faq-btn-6" data-open="false">
+            <div class="accordion__inner">
+              <p>Se usan solo para gestionar tu servicio. Las contraseñas se guardan cifradas y cada acceso a tu información queda registrado. Puedes pedir su eliminación cuando quieras.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     8. PIE DE PÁGINA
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__about">
+        <a class="logo" href="#inicio">
+          <span class="logo__mark" aria-hidden="true">&#128225;</span>
+          <span class="logo__name">SpaceFiber</span>
+        </a>
+        <p class="footer__desc">
+          Internet de fibra óptica para hogares y negocios, con instalación rápida,
+          soporte 24/7 y un portal donde gestionas todo tu servicio.
+        </p>
+        <div class="social">
+          <a href="#inicio" aria-label="Facebook">FB</a>
+          <a href="#inicio" aria-label="Instagram">IG</a>
+          <a href="#inicio" aria-label="WhatsApp">WA</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer__title">Servicio</h4>
+        <ul class="footer__list">
+          <li><a href="#planes">Planes y precios</a></li>
+          <li><a href="#cobertura">Cobertura</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#contratar">Contratar</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__title">Soporte</h4>
+        <ul class="footer__list">
+          <li><a href="#faq">Preguntas frecuentes</a></li>
+          <li><a href="#contratar">Reportar una falla</a></li>
+          <li><a href="#opiniones">Opiniones de clientes</a></li>
+          <li><a href="proyecto.html">Documentación del proyecto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer__title">Contacto</h4>
+        <ul class="footer__list">
+          <li><a href="mailto:contacto@spacefiber.co">contacto@spacefiber.co</a></li>
+          <li><a href="tel:+576040000000">+57 604 000 0000</a></li>
+          <li><span>Lunes a sábado, 7:00 a 20:00</span></li>
+          <li><span>Soporte técnico 24/7</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>&copy; 2026 SpaceFiber &middot; Sitio de demostración de un proyecto formativo.</span>
+      <div class="footer__legal">
+        <a href="politica-de-privacidad.html">Política de privacidad</a>
+        <a href="terminos-y-condiciones.html">Términos y condiciones</a>
+        <a href="#inicio">Volver arriba</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/ui.js" defer></script>
+<script src="assets/js/faq.js" defer></script>
+<script src="assets/js/form.js" defer></script>
+</body>
+</html>
