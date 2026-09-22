@@ -10,3 +10,6 @@ desktop.ini
 # Dependencias (por si más adelante se agrega un empaquetador)
 node_modules/
 dist/
+
+# Credenciales de Jira (scripts/jira-sprint.mjs): nunca se suben ni se publican
+.env

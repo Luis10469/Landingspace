@@ -11,9 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
 
-<link rel="stylesheet" href="assets/css/base.css">
-<link rel="stylesheet" href="assets/css/components.css">
-<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -260,7 +258,7 @@
             <li>Soporte 24/7 por chat y teléfono</li>
             <li>Sin cláusula de permanencia</li>
           </ul>
-          <a class="btn btn--ghost plan__cta" href="#contratar">Contratar Esencial</a>
+          <a class="btn btn--ghost plan__cta" href="#contratar" data-plan="esencial">Contratar Esencial</a>
         </article>
 
         <article class="plan plan--featured reveal">
@@ -276,7 +274,7 @@
             <li>Atención prioritaria en soporte</li>
             <li>Instalación en 48 horas</li>
           </ul>
-          <a class="btn btn--primary plan__cta" href="#contratar">Contratar Pro</a>
+          <a class="btn btn--primary plan__cta" href="#contratar" data-plan="pro">Contratar Pro</a>
         </article>
 
         <article class="plan reveal">
@@ -291,13 +289,13 @@
             <li>Visita técnica prioritaria</li>
             <li>Segundo punto de acceso con descuento</li>
           </ul>
-          <a class="btn btn--ghost plan__cta" href="#contratar">Contratar Max</a>
+          <a class="btn btn--ghost plan__cta" href="#contratar" data-plan="max">Contratar Max</a>
         </article>
       </div>
 
       <p class="sub center mt-5">
         ¿Tienes un negocio con necesidades distintas?
-        <a href="#contratar" style="color:var(--brand); font-weight:600">Habla con un asesor</a>
+        <a href="#contratar" data-plan="negocio" style="color:var(--brand); font-weight:600">Habla con un asesor</a>
         y armamos un plan a tu medida.
       </p>
     </div>
@@ -531,7 +529,7 @@
   <!-- ============================================================
        5. LLAMADO A LA ACCIÓN
        ============================================================ -->
-  <section class="section section--tight">
+  <section class="section section--tight" id="cta">
     <div class="wrap">
       <div class="cta-band reveal">
         <h2>Cámbiate esta semana y conéctate en 48 horas</h2>
@@ -556,7 +554,7 @@
       <div class="split">
         <div class="reveal">
           <span class="kicker">Solicita tu instalación</span>
-          <h2 class="section__title">Déjanos tus datos y te llamamos</h2>
+          <h2 class="section__title" id="contratar-titulo">Déjanos tus datos y te llamamos</h2>
           <p class="sub">
             Un asesor confirma la cobertura en tu dirección, te explica los planes disponibles
             y agenda la visita técnica en el horario que prefieras.
@@ -577,7 +575,7 @@
         </div>
 
         <div class="card reveal">
-          <form class="form" id="lead-form" novalidate>
+          <form class="form" id="lead-form" aria-labelledby="contratar-titulo" novalidate>
             <div class="form__row">
               <div class="field">
                 <label class="field__label" for="nombre">Nombre completo <span class="req" aria-hidden="true">*</span></label>
@@ -802,11 +800,13 @@
         <a href="#inicio">Volver arriba</a>
       </div>
     </div>
+    <p class="footer__credits">
+      Créditos: diseño y desarrollo del equipo SpaceFiber, proyecto formativo de Análisis y
+      Desarrollo de Software &middot; Tipografía Inter (Google Fonts) &middot; Ilustraciones SVG propias.
+    </p>
   </div>
 </footer>
 
-<script src="assets/js/ui.js" defer></script>
-<script src="assets/js/faq.js" defer></script>
-<script src="assets/js/form.js" defer></script>
+<script src="script.js" defer></script>
 </body>
 </html>
